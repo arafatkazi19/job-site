@@ -18,9 +18,9 @@ class CreateProfilesTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             //$table->string('email');
-            $table->string('profile_photo');
-            $table->string('resume');
-            $table->string('skills');
+            $table->string('profile_photo')->nullable();
+            $table->string('resume')->nullable();
+            $table->string('skills')->nullable();
             $table->integer('user_id');
             $table->timestamps();
         });
